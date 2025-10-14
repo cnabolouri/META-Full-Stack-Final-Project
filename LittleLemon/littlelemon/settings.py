@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'USER': 'root',
-        'PASSWORD': '@Cna1377',
+        'PASSWORD': 'root',
         "OPTIONS": {"init_command": "SET sql_mode='STRICT_TRANS_TABLES'"},
     }
 }
@@ -163,3 +163,4 @@ REST_FRAMEWORK = {
 REST_FRAMEWORK["PAGE_SIZE"] = 5
 REST_FRAMEWORK["PAGE_SIZE_QUERY_PARAM"] = "page_size"
 REST_FRAMEWORK["MAX_PAGE_SIZE"] = 50
+
