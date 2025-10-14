@@ -1,1 +1,32 @@
 # META-Full-Stack-Final-Project
+#Links
+
+admin/
+[name='home']
+about/ [name='about']
+book/ [name='book']
+menu/ [name='menu']
+menu_item/<int:pk>/ [name='menu_item']
+reservations/ [name='reservations']
+reservations/ [name='reservations']
+bookings [name='bookings_api']
+account/ [name='account']
+accounts/login/ [name='login']
+accounts/logout/ [name='logout']
+accounts/signup/ [name='signup']
+api/menu/ [name='api_menu_list']
+api/menu/<int:pk>/ [name='api_menu_detail']
+api/bookings/ [name='api_booking_list']
+api/bookings/<int:pk>/ [name='api_booking_detail']
+[name='home']
+api/ ^menu/$ [name='menu-list']
+api/ ^menu\.(?P<format>[a-z0-9]+)/?$ [name='menu-list']
+api/ ^menu/(?P<pk>[^/.]+)/$ [name='menu-detail']
+api/ ^menu/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$ [name='menu-detail']
+api/ ^bookings/$ [name='bookings-list']
+api/ ^bookings\.(?P<format>[a-z0-9]+)/?$ [name='bookings-list']
+api/ ^bookings/(?P<pk>[^/.]+)/$ [name='bookings-detail']
+api/ ^bookings/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$ [name='bookings-detail']
+api/ [name='api-root']
+api/ <drf_format_suffix:format> [name='api-root']
+auth/
