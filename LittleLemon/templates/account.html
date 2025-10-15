@@ -10,11 +10,11 @@
           <h2>Profile</h2>
           <p><strong>Username:</strong> {{ user.username }}</p>
           {% if user.email %}<p><strong>Email:</strong> {{ user.email }}</p>{% endif %}
-          <p><a class="cta" href="{% url 'reservations' %}">My reservations</a></p>
+          <p><a class="cta" href="{% url 'restaurant:reservations' %}">My reservations</a></p>
         </div>
         <div class="column">
           <h2>Sign out</h2>
-          <form method="post" action="{% url 'logout' %}">
+          <form method="post" action="{% url 'restaurant:logout' %}">
             {% csrf_token %}
             <button type="submit" id="button">Sign out</button>
           </form>
@@ -23,9 +23,9 @@
     {% else %}
       <p>You’re not signed in.</p>
       <p>
-        <a class="cta" href="{% url 'login' %}?next={% url 'account' %}">Sign in</a>
+        <a class="cta" href="{% url 'restaurant:login' %}?next={% url 'account' %}">Sign in</a>
         &nbsp;or&nbsp;
-        <a class="cta" href="{% url 'signup' %}">Create an account</a>
+        <a class="cta" href="{% url 'restaurant:signup' %}">Create an account</a>
       </p>
     {% endif %}
   </article>

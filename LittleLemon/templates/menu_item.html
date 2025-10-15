@@ -5,8 +5,8 @@
   <article>
     <h1>Menu item</h1>
     <span>
-      <a href="{% url 'home' %}">Home</a> /
-      <a href="{% url 'menu' %}">Menu</a> /
+      <a href="{% url 'restaurant:home' %}">Home</a> /
+      <a href="{% url 'restaurant:menu' %}">Menu</a> /
       {{ menu_item.name }}
     </span>
 

@@ -27,9 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_URL = "login"
-LOGIN_REDIRECT_URL = "book"
-LOGOUT_REDIRECT_URL = "home"
+# LOGIN_URL = "account_login"
+# LOGIN_REDIRECT_URL = "book"
+# LOGOUT_REDIRECT_URL = "home"
+
+LOGIN_URL = "restaurant:login"
+LOGIN_REDIRECT_URL = "restaurant:book"
+LOGOUT_REDIRECT_URL = "restaurant:home"
+
 
 # Application definition
 
