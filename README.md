@@ -27,8 +27,8 @@ Users can sign up / sign in, make reservations, view **their own** reservations,
 
 ```bash
 # 1) Clone
-git clone <your-repo-url>
-cd META-Full-Stack-Final-Project
+git clone https://github.com/cnabolouri/META-Full-Stack-Final-Project.git
+cd META-Full-Stack-Final-Project/LittleLemon
 
 # 2) Create & activate a virtual environment
 python -m venv .venv
